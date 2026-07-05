@@ -43,7 +43,7 @@ body {
 }
 
 .listen-cta {
-  background: linear-gradient(135deg, var(--teal), #256d69);
+  background: linear-gradient(135deg, var(--navy), var(--navy-dark));
   color: #fff;
   text-align: center;
   padding: 26px 20px 30px;
@@ -52,7 +52,7 @@ body {
 .listen-kicker {
   margin: 0 0 4px;
   font-weight: 600;
-  color: var(--sand-light);
+  color: var(--sand);
   font-size: 0.9rem;
   letter-spacing: 0.03em;
 }

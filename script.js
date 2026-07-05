@@ -1,6 +1,6 @@
 // כתובת ה-Web App של Google Apps Script.
 // יש להחליף את הערך הבא בכתובת שמתקבלת אחרי פריסת הסקריפט (ראו README.md).
-const SCRIPT_URL = "PASTE_YOUR_APPS_SCRIPT_URL_HERE";
+const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbx83QGknkQeKBY-qFUgiuoXCsxDF8oeRsXEyZ5kE1bIavMvx9LTKnsVCg5NvrM--28/exec";
 
 const form = document.getElementById("guest-form");
 const statusEl = document.getElementById("form-status");
