@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>כאן ושם – מסע של רילוקיישן | הרשמה לפודקאסט</title>
+<meta name="description" content="פודקאסט כאן ושם – מסע של רילוקיישן, עם אייל הבט ויעל ברמזור. מלאו את השאלון לפני ההקלטה.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="hero">
+  <div class="hero-image-wrap">
+    <img src="assets/hero.png" alt="כאן ושם – מסע של רילוקיישן, עם אייל הבט ויעל ברמזור" class="hero-image">
+  </div>
+  <div class="hero-text">
+    <p class="hero-kicker">שאלון לאורחי הפודקאסט</p>
+    <h1>ברוכים הבאים ל"כאן ושם"</h1>
+    <p class="hero-sub">הבית של קהילת הרילוקיישן הישראלית</p>
+  </div>
+</header>
+
+<main class="container">
+
+  <section class="intro card">
+    <h2>תודה רבה על נכונותך להתארח בפודקאסט "כאן ושם – מסע של רילוקיישן"</h2>
+    <p>
+      מטרת הפודקאסט היא ליצור את הבית של קהילת הרילוקיישן הישראלית – מקום שבו ישראלים ברחבי העולם,
+      אנשים השוקלים מעבר לחו"ל ואנשי מקצוע יוכלו למצוא ולספק מידע אמין, סיפורים אישיים, השראה,
+      טיפים מעשיים ותחושת קהילה.
+    </p>
+    <p>
+      כדי שנוכל להכיר אותך ולהתכונן לשיחה, נשמח אם תמלא/י את השאלון הקצר הבא. מילוי השאלון ייקח רק
+      כמה דקות אבל נוכל לעבור על השאלות/ נושאים גם לפני שנתחיל להקליט וכמובן שנשמח להבהיר/ לענות על
+      שאלות שאולי יצוצו אצלך.
+    </p>
+  </section>
+
+  <form id="guest-form" class="card">
+
+    <fieldset class="section">
+      <legend>פרטים אישיים</legend>
+
+      <label class="field">
+        <span>שם מלא</span>
+        <input type="text" name="שם מלא" required>
+      </label>
+
+      <label class="field">
+        <span>באיזו מדינה ועיר את/ה מתגורר/ת כיום?</span>
+        <input type="text" name="מדינה ועיר מגורים" required>
+      </label>
+
+      <div class="field">
+        <span>מה מאפיין את המצב שלך?</span>
+        <div class="radio-toggle">
+          <label class="radio-pill">
+            <input type="radio" name="סטטוס" value="חי/ה בחו״ל" required>
+            <span>חי/ה בחו״ל</span>
+          </label>
+          <label class="radio-pill">
+            <input type="radio" name="סטטוס" value="שוקל/ת לעבור" required>
+            <span>שוקל/ת לעבור</span>
+          </label>
+        </div>
+      </div>
+
+      <div id="branch-living" class="branch hidden">
+        <label class="field">
+          <span>כמה זמן את/ה גר/ה בחו"ל?</span>
+          <input type="text" name="כמה זמן גר בחול">
+        </label>
+      </div>
+
+      <div id="branch-considering" class="branch hidden">
+        <label class="field">
+          <span>באיזה שלב את/ה נמצא/ת ברילוקיישן?</span>
+          <select name="שלב שיקול רילוקיישן">
+            <option value="">בחר/י אפשרות</option>
+            <option value="כן, בתהליך מתקדם">כן, בתהליך מתקדם</option>
+            <option value="כן, בשלבי בדיקה">כן, בשלבי בדיקה</option>
+            <option value="אולי, עדיין בשלבי מחשבה ראשונית">אולי, עדיין בשלבי מחשבה ראשונית</option>
+          </select>
+        </label>
+      </div>
+
+      <label class="field">
+        <span>מה העיסוק שלך?</span>
+        <input type="text" name="עיסוק">
+      </label>
+
+      <label class="field">
+        <span>אם את/ה איש/אשת מקצוע/ נציג ארגון – האם וכיצד תחום העיסוק או הידע שלך יכול לסייע לישראלים שחיים בחו"ל או שוקלים רילוקיישן?</span>
+        <textarea name="תרומת העיסוק לקהילה" rows="3"></textarea>
+      </label>
+    </fieldset>
+
+    <fieldset class="section">
+      <legend>על מה תרצה/י לדבר בפודקאסט?</legend>
+      <p class="hint">ניתן לבחור יותר מנושא אחד.</p>
+
+      <div class="checkbox-grid">
+        <label class="checkbox-item"><input type="checkbox" name="נושאים" value="הסיפור האישי שלי"><span>הסיפור האישי שלי</span></label>
+        <label class="checkbox-item"><input type="checkbox" name="נושאים" value="רילוקיישן עם ילדים"><span>רילוקיישן עם ילדים</span></label>
+        <label class="checkbox-item"><input type="checkbox" name="נושאים" value="רילוקיישן בגיל מבוגר"><span>רילוקיישן בגיל מבוגר</span></label>
+        <label class="checkbox-item"><input type="checkbox" name="נושאים" value="קריירה, תעסוקה והזדמנויות"><span>קריירה, תעסוקה והזדמנויות</span></label>
+        <label class="checkbox-item"><input type="checkbox" name="נושאים" value="יזמות או פתיחת עסק"><span>יזמות או פתיחת עסק</span></label>
+        <label class="checkbox-item"><input type="checkbox" name="נושאים" value="תרבות, שפה והשתלבות"><span>תרבות, שפה והשתלבות</span></label>
+        <label class="checkbox-item"><input type="checkbox" name="נושאים" value="בניית קהילה"><span>בניית קהילה</span></label>
+        <label class="checkbox-item"><input type="checkbox" name="נושאים" value="הקהילה הישראלית"><span>הקהילה הישראלית</span></label>
+        <label class="checkbox-item"><input type="checkbox" name="נושאים" value="הקהילה היהודית"><span>הקהילה היהודית</span></label>
+        <label class="checkbox-item"><input type="checkbox" name="נושאים" value="שמירה על הזהות והקשר לישראל"><span>שמירה על הזהות והקשר לישראל</span></label>
+        <label class="checkbox-item"><input type="checkbox" name="נושאים" value="אנטישמיות והתמודדות עמה"><span>אנטישמיות והתמודדות עמה</span></label>
+        <label class="checkbox-item"><input type="checkbox" name="נושאים" value="ויזות, דרכונים, אשרות עבודה ובירוקרטיה"><span>ויזות, דרכונים, אשרות עבודה ובירוקרטיה</span></label>
+        <label class="checkbox-item"><input type="checkbox" name="נושאים" value="דיור והתארגנות במדינה החדשה"><span>דיור והתארגנות במדינה החדשה</span></label>
+        <label class="checkbox-item"><input type="checkbox" name="נושאים" value="מיסוי, בנקאות או נושאים פיננסיים"><span>מיסוי, בנקאות או נושאים פיננסיים</span></label>
+        <label class="checkbox-item"><input type="checkbox" name="נושאים" value="הצלחות לאורך הדרך"><span>הצלחות לאורך הדרך</span></label>
+        <label class="checkbox-item"><input type="checkbox" name="נושאים" value="אתגרים, טעויות ומה שלמדתי מהן"><span>אתגרים, טעויות ומה שלמדתי מהן</span></label>
+      </div>
+
+      <label class="field checkbox-other">
+        <input type="checkbox" id="other-topic-check" name="נושאים" value="אחר">
+        <span>אחר (נא לפרט):</span>
+        <input type="text" name="נושא אחר - פירוט" id="other-topic-text" class="other-text" disabled>
+      </label>
+    </fieldset>
+
+    <fieldset class="section">
+      <legend>נשמח להכיר אותך קצת יותר</legend>
+
+      <label class="field">
+        <span>מה לדעתך יהיה הערך המרכזי שהמאזינים יוכלו לקבל מהשיחה איתך?</span>
+        <textarea name="ערך מרכזי למאזינים" rows="3"></textarea>
+      </label>
+
+      <label class="field">
+        <span>האם יש נושא שחשוב לך במיוחד שנדבר עליו?</span>
+        <textarea name="נושא חשוב במיוחד" rows="3"></textarea>
+      </label>
+
+      <label class="field">
+        <span>האם יש משהו שעדיף שלא נעלה במהלך הריאיון? נכבד את רצונך כמובן</span>
+        <textarea name="נושאים למניעה" rows="3"></textarea>
+      </label>
+    </fieldset>
+
+    <div class="submit-row">
+      <button type="submit" id="submit-btn">שליחת השאלון</button>
+      <p id="form-status" class="form-status"></p>
+    </div>
+  </form>
+
+  <section class="thanks card hidden" id="thanks-message">
+    <h2>תודה רבה!</h2>
+    <p>אנחנו מצפים לשוחח איתך ולשתף את הסיפור והידע שלך עם קהילת "כאן ושם".</p>
+  </section>
+
+  <footer class="site-footer">
+    <p>אייל הבט &nbsp;•&nbsp; יעל ברמזור</p>
+  </footer>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
