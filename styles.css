@@ -49,18 +49,10 @@ body {
   padding: 26px 20px 30px;
 }
 
-.listen-kicker {
-  margin: 0 0 4px;
-  font-weight: 600;
-  color: var(--sand-light);
-  font-size: 0.9rem;
-  letter-spacing: 0.03em;
-}
-
 .listen-line {
   margin: 0 0 16px;
-  font-size: 1.05rem;
-  font-weight: 500;
+  font-size: 1.2rem;
+  font-weight: 600;
 }
 
 .listen-btn {
